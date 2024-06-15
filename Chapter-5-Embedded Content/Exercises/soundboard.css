@@ -1,0 +1,58 @@
+/*we  add box sizing set to border box for all elements */
+* {
+  box-sizing: border-box;
+}
+/*set background color to blue*/
+body {
+  background-color: blue;
+  /*set font to Arial , sans-serif*/
+  font-family: Arial, sans-serif;
+  /*remove margin*/
+  margin: 0;
+  /*center items vertically and horizontally*/
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  width: 100vw; /* Full width of viewport */
+  height: 100vh; /* Full height of viewport */
+  background-image: url("Headphones Dark.jpeg"); /* Corrected background image path */
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  animation: backgroundAnimation 20s linear infinite; /* Background animation */
+}
+/*defines the animation 'backgroundAnimation*/
+@keyframes backgroundAnimation {
+  0% { background-position: 0 0; }/*this define anitial background*/
+  50% { background-position: 100% 0; }/*moves background to 100%*/
+  100% { background-position: 0 0; }/*reserts backgroung postion at end */
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 10px; /* Gap between buttons */
+  align-items: center; /* Center items horizontally */
+}
+
+.sound-btn {
+  margin: 5px;
+  padding: 10px;
+  background-color: #630fb7;
+  color: blue; /* Change text color to blue */
+  /*remove border and add border radius*/
+  border: none;
+  border-radius: 5px;
+  /cursor type and font size/
+  cursor: pointer;
+  font-size: 16px;
+  /add transition efect/
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+.sound-btn:hover {
+  background-color: #070707; /* Change background color on hover */
+}
+
+.sound-btn:focus {
+  outline: none;
+}
