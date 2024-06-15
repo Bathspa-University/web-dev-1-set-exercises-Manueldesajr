@@ -1,0 +1,118 @@
+/*set the font family to Arial and color to black*/
+body {
+    font-family: "Arial", sans-serif;
+    color: #000000;
+    /*Remove margin and padding*/
+    margin: 0;
+    padding: 0;
+}
+/*container with 80% width and centered horizontally*/
+.container {
+    width: 80%;
+    
+    margin: 0 auto;
+}
+/*set width of image to 600px with*/
+.container img{
+    width: 600px;
+    gap: 10px;
+}
+/*header background color and padding*/
+header {
+    background-color: #17072b;
+    padding: 20px 0;
+}
+/*header tittle font styling*/
+header h1 {
+    font-family: "Tahoma", sans-serif; /*font type*/
+    font-weight: 700;/*bold font weight*/
+    color: #ffffff;/*white color*/
+    text-align: center;/*center alignment*/
+    margin: 0;/*no margin*/
+}
+
+header nav ul {
+    /*style for navigation ul element*/
+    list-style: none;/*remove default list style*/
+    margin: 0;/*remove default margin*/
+    padding: 0;/*remove default padding*/
+    text-align: center;/*center align text*/
+}
+/*header navigation  unordered list items*/
+header nav ul li {
+    /*display list items  inline with margin*/
+    display: inline;
+    margin: 0 10px;
+}
+/*style for header navigation links*/
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;/*remove underline from links*/
+}
+/*define the main container as a flex container*/
+main {
+    display: flex;
+    /*justify the content with space  between*/
+    justify-content: space-between;
+    /*Add padding to the top and bottom (20px) and left and right (0)*/
+    padding: 20px 0;
+}
+/*set the width of the welcome class to 60%*/
+.welcome {
+    width: 60%;
+}
+/*This class is for the line-up element*/
+.line-up {
+    /*set the width of  the element*/
+    width: 45%;
+    /*set the background color*/
+    background-color: #172d67;
+    /*set the text color*/
+    color: #ffffff;
+    /*Add padding to the element*/
+    padding: 20px;
+}
+
+/*set font family to Tahoma with sans-serif as as fall back*/
+.line-up h3 {
+    font-family: "Tahoma", sans-serif;
+    /*set font weight to bold*/
+    font-weight: 700;
+    /*remove to margin*/
+    margin-top: 0;
+}
+/*Add padding and margin to list items*/
+.line-up ul {
+    padding: 0; /*Remove default padding*/
+    margin: 20px 0;/*Add top  and bottom*/
+}
+/*Add margin  bottom to each list item*/
+.line-up ul li {
+    margin-bottom: 10px;
+}
+/*defines a class '.images'*/
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+/*set width and height of images to 200px and 300px respectively*/
+.images img {
+    width: 200px;
+    height: 300px;
+    /*make the image fit the  dimensions while perserving aspect ratio*/
+    object-fit: cover;
+    /*Add a rounded border to the images*/
+    border-radius: 10px;
+}
+/*Footer background color*/
+footer {
+    background-color: #8c15e9;
+    /*Footer text color*/
+    color: #ffffff;
+    /*Center align text*/
+    text-align: center;
+    /*Padding for  spacing*/
+    padding: 20px 0;
+}
+
+  
