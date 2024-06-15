@@ -1,0 +1,90 @@
+/styling the body/
+body{
+    background-color:darkblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/styling the navegation/
+header nav {
+    background-color:  black;
+    display: flex;/make the nav items inline/
+    padding: 1rem;/add some padding/
+    justify-content: space-between;/space out of the nav items/
+    align-items: center;/center the nav items vertically/
+}
+/style the in dividual navigation items/
+header nav ul {
+   list-style: none;/remove the bullets/
+   margin: 0;/remove margin/
+   padding: 0;/remove padding/
+}
+header nav li{
+    margin-right: 20px;/add some space between nav items/
+}
+header nav a {
+    color: #fff; /* white text color */
+    text-decoration: none; /* remove underline */
+    transition: color 0.2s ease; /* add a transition effect */
+  }
+  
+  header nav a:hover {
+    color:red; /* red text color on hover */
+  }
+/add padding to the main content area/
+main{
+    display: flex;/make the main content flex/
+    flex-direction: column;/stack the sections vertyically/
+    align-items: center;/center the section/
+    padding: 2rem;/add some padding/
+}
+section{
+    background-color: #333;/dark gray background/
+    padding: 2rem;/add some padding/
+    margin-bottom: 20px;/add some space between sections/
+    border-radius: 10px;/add some rounded corners/
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)/add a suble shadow/
+    }
+    h1{
+font-size: 24px;/increase font size/
+margin-bottom: 10px;/add some space between the heading and the paragraph/
+margin-bottom: 0;/remove margin top/
+    }
+    ul{
+        list-style: none;/remove bullets/
+        padding: 0;/remove padding/
+        margin: 0;/remove margin/
+
+    }
+li{
+    margin-bottom: 10px;/add some space between list items/
+}
+li::before{
+    content: "\2022";/add a bullet point/
+    color: #666;/dark gray color/
+    font-size: 18px;/increase font size/
+    margin-right: 10px;/add some space between the bullet and the text/
+
+}
+a{
+    color: #337ab7;/blue color/
+    text-decoration: none;/remove underline/
+
+}
+a:hover{
+    color: darkblue;/darker blue text color on hover/
+
+}
+/specific styles/
+#Plot{
+    background-color: gray;
+}
+#overview { background-color: gray; 
+}
+#Characters{
+    background-color: gray;
+}
+#key info{background-color:gray;
+}
+#Ceative-Team{
+    background-color: gray;
+}
